@@ -1,7 +1,22 @@
 * {
     background-color: lightblue;
+    text-align: center; 
 }
+
+h1{
+        text-shadow: 2px 2px #bb5555;
+    }
+
 
 h4{
     font-style: italic;
+}
+
+p{
+    text-align: left;
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid red;
+    text-shadow: 1px 1px 2px black;
+    box-shadow: 7px 7px 7px rgb(90, 14, 14);
 }
