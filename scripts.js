@@ -1,13 +1,18 @@
-console.log('hello world')
+const attendanceSelect = document.getElementById("attendance");
+let answer;
 
-let answer = document.getElementById("attendance").value
+attendanceSelect.addEventListener("change", function() {
+    answer = attendanceSelect.value;
+    console.log(answer); 
+});
 
-console.log(answer)
 
 function attending() {
-    if (document.getElementById("attendance").value = "Yes") {
-    alert("well see you there!")    
+    console.log(answer);
+    if (answer === "Yes") {
+        document.getElementById("response").innerHTML = "You're amazing and we'll see you there!";
+    } else if (answer === "No") {
+        document.getElementById("response").innerHTML = "You're a loser, but we still want you anyway and its not really your decision, so we'll see you there! :)";
     }
-    else { alert("not a valid response") }
-    console.log(answer)
-}
+    else { document.getElementById("response").innerHTML = "Please select a response";}
+} 

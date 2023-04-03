@@ -20,14 +20,16 @@
         "The Phoenix of Slims Past," "The Ghost of Libertine Tower" - No, I'm not talking about Iron Door Pub. I'm talking about Arts & Rec, a new installment in an otherwise broken neighborhood.
         </p>
     </div>
-    <div class="yesorno">
+    <h1>Please answer whether you'll be attending below:</h1>
+    <div class="yesorno"> 
         <select name="attending" id="attendance">
+            <option value="Select">Select</option>
             <option value="Yes">Yes</option>
             <option value="No">No</option>
         </select>
-        <button onclick="attending()" type="submit">Submit</button>
+        <button onclick="attending()" type="button">Submit</button>
     </div>
-    
+    <h1 id="response"></h1>
     <script src="scripts.js"></script>
 </body>
 </html>
